@@ -1,7 +1,8 @@
 new Vue({
   el: '#app',
   data: {
-    msg: 'Hello World!',
+    classA: 'Ini kelas A',
+    classB: 'Ini kelas B',
     students: [
         {
           name: 'Nugraha',

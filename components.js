@@ -4,9 +4,11 @@ Vue.component('student-data', {
   <div class="panel panel-default">
     <div class="panel-heading">{{ name }}</div>
     <div class="panel-body">
-      {{ shortDesc }}
+      <strong>Hobby:</strong> {{ shortDesc }}
     </div>
-    <button type="btn" class="btn btn-sm" @click="killStudent">Delete</button>
+    <div class="panel-footer">
+      <button type="btn" class="btn btn-xs btn-danger" @click="killStudent"><span class="glyphicon glyphicon-remove"></span>Kill</button>
+    </div>
   </div>`,
   methods: {
     killStudent () {
