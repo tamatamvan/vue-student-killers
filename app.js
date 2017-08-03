@@ -17,10 +17,5 @@ new Vue({
           shortDesc: 'Jualan Burung'
         }
       ]
-  },
-  methods: {
-    kuburin (idx) {
-      this.students.splice(idx, 1)
-    }
   }
 })

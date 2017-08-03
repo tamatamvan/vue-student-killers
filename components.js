@@ -29,13 +29,12 @@ Vue.component('app-container', {
     :short-desc="student.shortDesc" 
     :idx="index"
     :key="index"
-    @killed="removeStudent">
+    @killed="kuburin">
     </student-data>
   </div>`,
   methods: {
-    removeStudent (idx) {
-      console.log('removed ', idx)
-      this.$emit('someone-killed', idx)
+    kuburin (idx) {
+      this.students.splice(idx, 1)
     }
   }
 })
@@ -50,5 +49,10 @@ Vue.component('app-container1', {
     :name="index+1 + '. ' + student.name" 
     :short-desc="student.shortDesc" :idx="index ":key="index">
     </student-data>
-  </div>`
+  </div>`,
+  methods: {
+    kuburin (idx) {
+      this.students.splice(idx, 1)
+    }
+  }
 })
