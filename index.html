@@ -11,16 +11,18 @@
     <div id="app">
       <div class="container">
         <div class="row">
-          <app-container :msg-child="classA" 
+          <app-container 
+          :msg-child="classA" 
           :students="students" 
-          @someone-killed="kuburin"></app-container>
+          @someone-killed="kuburin"/>
           <!-- Basically it's the same components
           But I made the new one, 
           Which is actually the same,
           Just for education purpose -->
-          <app-container1 :msg-child="classB" 
+          <app-container1 
+          :msg-child="classB" 
           :students="students" 
-          @someone-killed="kuburin"></app-container1>
+          @someone-killed="kuburin"/>
         </div>
       </div>
     </div>
